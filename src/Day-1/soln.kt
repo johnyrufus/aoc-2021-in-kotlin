@@ -1,3 +1,8 @@
+package `Day-1`
+
+import readInput
+
+
 fun main() {
     fun part1(input: List<String>): Int {
         return input.zipWithNext { a, b ->
@@ -18,7 +23,7 @@ fun main() {
         }.sum()
     }
 
-    val testInput = readInput("Day01_test")
+    val testInput = readInput("./Day-1/test")
     println(part1(testInput))
     println(part2(testInput))
 
